@@ -1,0 +1,195 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "surakshanet-alert",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "23efacc4-d268-47a6-a8e9-bf83b001b882",
+      "name": "Webhook",
+      "webhookId": "9ee60b70-a549-45ff-9107-b63aa2bd518c"
+    },
+    {
+      "parameters": {
+        "jsCode": "const payload = $json.body || $json;\n\nconst alertMessage = `\n🚨 SURAKSHANET AI FRAUD ALERT\n\nCase ID: ${payload.case_id}\nVictim ID: ${payload.victim_id}\nRisk Score: ${payload.final_risk_score}\nRisk Level: ${payload.final_risk_level}\nPriority: ${payload.priority}\n\nScam Verdict:\n${payload.scam_analysis?.verdict}\n\nTransaction Decision:\n${payload.transaction_analysis?.decision}\n\nInvestigation Summary:\n${payload.investigation_summary}\n\nRecommended Next Steps:\n${payload.recommended_next_steps?.join(\"\\n\")}\n`;\n\nreturn [\n  {\n    json: {\n      case_id: payload.case_id,\n      victim_id: payload.victim_id,\n      risk_score: payload.final_risk_score,\n      risk_level: payload.final_risk_level,\n      priority: payload.priority,\n      alert_message: alertMessage\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "88929ab8-2515-43f8-97a2-cc02ab173013",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "value": "DLBEHPPRWOdRBY6g",
+          "mode": "list",
+          "cachedResultName": "fraud_alerts",
+          "cachedResultUrl": "/projects/dN3ht9LAiHkBd1Qp/datatables/DLBEHPPRWOdRBY6g"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "case_id",
+              "displayName": "case_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "victim_id",
+              "displayName": "victim_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "risk_score",
+              "displayName": "risk_score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "risk_level",
+              "displayName": "risk_level",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "priority",
+              "displayName": "priority",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "alert_message",
+              "displayName": "alert_message",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        400,
+        0
+      ],
+      "id": "49f16753-ae45-4ac9-9486-1abd436a1d25",
+      "name": "Insert row"
+    },
+    {
+      "parameters": {
+        "chatId": "8329113468",
+        "text": "={{$json.alert_message}}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        608,
+        0
+      ],
+      "id": "aaa0019f-901f-4550-a554-c992bc24b26e",
+      "name": "Send a text message",
+      "webhookId": "876757af-cebf-4cf7-b52c-e8e2a9906002",
+      "retryOnFail": true,
+      "waitBetweenTries": 500,
+      "credentials": {
+        "telegramApi": {
+          "id": "EGGBCedECdUesPAU",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Insert row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert row": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "411fe01e-4e7d-4059-b027-ca105c11e5b0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "c2cdb6fa3e8cc38dffd455d73486278622b86ee40d8e0bb8edb35d983e74e003"
+  },
+  "id": "elIMIhbznyRbfI9O",
+  "tags": []
+}
