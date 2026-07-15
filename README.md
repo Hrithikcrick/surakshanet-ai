@@ -1,9 +1,36 @@
-﻿# SurakshaNet AI
+<div align="center">
 
-**Hybrid LLM Fraud Intelligence and Automated Response Platform**
+# 🛡️ SurakshaNet AI
 
-SurakshaNet AI identifies high-risk scams and suspicious transactions by combining deterministic fraud rules, Google Gemini contextual intelligence, transaction-risk analysis, automated n8n workflows, and real-time Telegram alerts.
+### Hybrid LLM Fraud Intelligence & Automated Response Platform
 
+**Detect suspicious communication • Explain fraud risk • Trigger automated response • Preserve investigation evidence**
+
+<p>
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/Google_Gemini-AI-8E75B2?style=for-the-badge&logo=google&logoColor=white">
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/n8n-Automation-EA4B71?style=for-the-badge&logo=n8n&logoColor=white">
+  <img src="https://img.shields.io/badge/Telegram-Alerts-26A5E4?style=for-the-badge&logo=telegram&logoColor=white">
+  <img src="https://img.shields.io/badge/SQLite-Case_Storage-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Gemini_Accuracy-90%25-brightgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/Precision-90%25-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Recall-90%25-orange?style=flat-square">
+  <img src="https://img.shields.io/badge/F1_Score-90%25-purple?style=flat-square">
+</p>
+
+</div>
+
+> [!IMPORTANT]
+> SurakshaNet AI combines deterministic fraud rules, Gemini contextual intelligence, transaction-risk analysis, n8n automation, Telegram alerts, persistent case storage and complaint generation in one explainable workflow.
+
+---
 ## Problem
 
 Digital-arrest scams, authority impersonation, phishing, credential theft, payment coercion, and suspicious financial transactions are often handled through disconnected systems.
@@ -541,16 +568,88 @@ The system must not be used as the sole basis for:
 - Cloud deployment
 - Larger Indian cybercrime datasets
 
-## Five-Minute Demo Flow
 
-1. Submit a digital-arrest message.
-2. Show rule, Gemini and transaction scores.
-3. Explain the final hybrid score.
-4. Show Gemini evidence and manipulation tactics.
-5. Show the Telegram alert.
-6. Open the Investigator Dashboard.
-7. Download the complaint package.
-8. Present the evaluation metrics.
+## 📸 Product Showcase
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔍 Hybrid Fraud Analysis
+
+The platform combines rule-engine, Gemini and transaction-risk scores into one explainable result.
+
+<img src="docs/screenshots/fraud-analysis.png" width="100%">
+
+</td>
+<td width="50%" valign="top">
+
+### 🧠 Gemini Intelligence
+
+Gemini identifies scam type, confidence, evidence, manipulation tactics and recommended actions.
+
+<img src="docs/screenshots/gemini-analysis.png" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🕵️ Investigator Dashboard
+
+Investigators can review case history, risk levels, alert status and complete hybrid intelligence.
+
+<img src="docs/screenshots/investigator-dashboard.png" width="100%">
+
+</td>
+<td width="50%" valign="top">
+
+### 🚨 Automated Telegram Alert
+
+Critical incidents are delivered automatically through the n8n Telegram workflow.
+
+<img src="docs/screenshots/telegram-alert.png" width="100%">
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### ⚙️ n8n Response Workflow
+
+Webhook data is processed, stored and converted into an operational Telegram alert.
+
+<img src="docs/screenshots/n8n-workflow.png" width="100%">
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 Real-Data Evaluation
+
+The evaluation pipeline reports accuracy, precision, recall, F1 score and processing latency.
+
+<img src="docs/screenshots/evaluation-results.png" width="100%">
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🏆 Why SurakshaNet Stands Out
+
+| Capability | SurakshaNet Approach |
+|---|---|
+| Fraud detection | Deterministic rules and Gemini contextual intelligence |
+| Financial protection | Transaction anomaly and risk scoring |
+| Explainability | Separate rule, LLM, transaction and final scores |
+| Automated response | n8n webhook and Telegram alert |
+| Investigation support | Persistent SQLite case history |
+| Complaint support | Downloadable cybercrime complaint package |
+| Reliability | Safe deterministic fallback when Gemini fails |
+| Validation | Public-dataset evaluation with transparent limitations |
 
 ## License
 
