@@ -1,6 +1,6 @@
 <div align="center">
 
-# &#x1F6E1;&#xFE0F; SurakshaNet AI
+# SurakshaNet AI
 ### Hybrid LLM Fraud Intelligence & Automated Response Platform
 
 **Detect suspicious communication | Explain fraud risk | Trigger automated response | Preserve investigation evidence**
@@ -259,7 +259,6 @@ flowchart LR
     G --> J[Investigator Dashboard]
     G --> K[Complaint Generator]
 ```
-
 ## Technology Stack
 
 ### Frontend
@@ -568,12 +567,12 @@ The system must not be used as the sole basis for:
 - Larger Indian cybercrime datasets
 
 
-## &#x1F4F8; Product Showcase
+## Product Showcase
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### &#x1F50D; Hybrid Fraud Analysis
+### Hybrid Fraud Analysis
 The platform combines rule-engine, Gemini and transaction-risk scores into one explainable result.
 
 <img src="docs/screenshots/fraud-analysis.png" width="100%">
@@ -581,7 +580,7 @@ The platform combines rule-engine, Gemini and transaction-risk scores into one e
 </td>
 <td width="50%" valign="top">
 
-### &#x1F9E0; Gemini Intelligence
+### Gemini Intelligence
 Gemini identifies scam type, confidence, evidence, manipulation tactics and recommended actions.
 
 <img src="docs/screenshots/gemini-analysis.png" width="100%">
@@ -592,7 +591,7 @@ Gemini identifies scam type, confidence, evidence, manipulation tactics and reco
 <tr>
 <td width="50%" valign="top">
 
-### &#x1F575;&#xFE0F; Investigator Dashboard
+### Investigator Dashboard
 Investigators can review case history, risk levels, alert status and complete hybrid intelligence.
 
 <img src="docs/screenshots/investigator-dashboard.png" width="100%">
@@ -600,7 +599,7 @@ Investigators can review case history, risk levels, alert status and complete hy
 </td>
 <td width="50%" valign="top">
 
-### &#x1F6A8; Automated Telegram Alert
+### Automated Telegram Alert
 Critical incidents are delivered automatically through the n8n Telegram workflow.
 
 <img src="docs/screenshots/telegram-alert.png" width="100%">
@@ -611,7 +610,7 @@ Critical incidents are delivered automatically through the n8n Telegram workflow
 <tr>
 <td width="50%" valign="top">
 
-### &#x2699;&#xFE0F; n8n Response Workflow
+### n8n Response Workflow
 Webhook data is processed, stored and converted into an operational Telegram alert.
 
 <img src="docs/screenshots/n8n-workflow.png" width="100%">
@@ -619,7 +618,7 @@ Webhook data is processed, stored and converted into an operational Telegram ale
 </td>
 <td width="50%" valign="top">
 
-### &#x1F4CA; Real-Data Evaluation
+### Real-Data Evaluation
 The evaluation pipeline reports accuracy, precision, recall, F1 score and processing latency.
 
 <img src="docs/screenshots/evaluation-results.png" width="100%">
@@ -630,8 +629,7 @@ The evaluation pipeline reports accuracy, precision, recall, F1 score and proces
 
 ---
 
-## 🏆 Why SurakshaNet Stands Out
-
+## Why SurakshaNet Stands Out
 | Capability | SurakshaNet Approach |
 |---|---|
 | Fraud detection | Deterministic rules and Gemini contextual intelligence |
