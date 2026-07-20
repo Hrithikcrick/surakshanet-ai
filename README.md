@@ -1,10 +1,9 @@
 <div align="center">
 
-# ðŸ›¡ï¸ SurakshaNet AI
-
+# &#x1F6E1;&#xFE0F; SurakshaNet AI
 ### Hybrid LLM Fraud Intelligence & Automated Response Platform
 
-**Detect suspicious communication â€¢ Explain fraud risk â€¢ Trigger automated response â€¢ Preserve investigation evidence**
+**Detect suspicious communication | Explain fraud risk | Trigger automated response | Preserve investigation evidence**
 
 <p>
   <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black">
@@ -356,46 +355,46 @@ evaluation/results/evaluation_report.md
 
 ```text
 surakshanet-ai/
-â”‚
-â”œâ”€â”€ backend/
-â”‚   â”œâ”€â”€ main.py
-â”‚   â”œâ”€â”€ database.py
-â”‚   â”œâ”€â”€ complaint.py
-â”‚   â”œâ”€â”€ llm_analyzer.py
-â”‚   â”œâ”€â”€ hybrid_engine.py
-â”‚   â”œâ”€â”€ test_llm.py
-â”‚   â””â”€â”€ requirements.txt
-â”‚
-â”œâ”€â”€ frontend/
-â”‚   â”œâ”€â”€ src/
-â”‚   â”‚   â”œâ”€â”€ App.jsx
-â”‚   â”‚   â”œâ”€â”€ App.css
-â”‚   â”‚   â”œâ”€â”€ index.css
-â”‚   â”‚   â””â”€â”€ main.jsx
-â”‚   â”œâ”€â”€ package.json
-â”‚   â””â”€â”€ vite.config.js
-â”‚
-â”œâ”€â”€ evaluation/
-â”‚   â”œâ”€â”€ download_sms_dataset.py
-â”‚   â”œâ”€â”€ run_evaluation.py
-â”‚   â”œâ”€â”€ data/
-â”‚   â””â”€â”€ results/
-â”‚
-â”œâ”€â”€ n8n-workflows/
-â”‚   â”œâ”€â”€ SETUP.md
-â”‚   â””â”€â”€ surakshanet-workflow.json
-â”‚
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ screenshots/
-â”‚   â”œâ”€â”€ architecture.md
-â”‚   â”œâ”€â”€ demo-script.md
-â”‚   â”œâ”€â”€ privacy-and-ethics.md
-â”‚   â””â”€â”€ submission-summary.md
-â”‚
-â”œâ”€â”€ .env.example
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ LICENSE
-â””â”€â”€ README.md
+│
+├── backend/
+│   ├── main.py
+│   ├── database.py
+│   ├── complaint.py
+│   ├── llm_analyzer.py
+│   ├── hybrid_engine.py
+│   ├── test_llm.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── evaluation/
+│   ├── download_sms_dataset.py
+│   ├── run_evaluation.py
+│   ├── data/
+│   └── results/
+│
+├── n8n-workflows/
+│   ├── SETUP.md
+│   └── surakshanet-workflow.json
+│
+├── docs/
+│   ├── screenshots/
+│   ├── architecture.md
+│   ├── demo-script.md
+│   ├── privacy-and-ethics.md
+│   └── submission-summary.md
+│
+├── .env.example
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ## Local Installation
@@ -569,14 +568,12 @@ The system must not be used as the sole basis for:
 - Larger Indian cybercrime datasets
 
 
-## ðŸ“¸ Product Showcase
-
+## &#x1F4F8; Product Showcase
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### ðŸ” Hybrid Fraud Analysis
-
+### &#x1F50D; Hybrid Fraud Analysis
 The platform combines rule-engine, Gemini and transaction-risk scores into one explainable result.
 
 <img src="docs/screenshots/fraud-analysis.png" width="100%">
@@ -584,8 +581,7 @@ The platform combines rule-engine, Gemini and transaction-risk scores into one e
 </td>
 <td width="50%" valign="top">
 
-### ðŸ§  Gemini Intelligence
-
+### &#x1F9E0; Gemini Intelligence
 Gemini identifies scam type, confidence, evidence, manipulation tactics and recommended actions.
 
 <img src="docs/screenshots/gemini-analysis.png" width="100%">
@@ -596,8 +592,7 @@ Gemini identifies scam type, confidence, evidence, manipulation tactics and reco
 <tr>
 <td width="50%" valign="top">
 
-### ðŸ•µï¸ Investigator Dashboard
-
+### &#x1F575;&#xFE0F; Investigator Dashboard
 Investigators can review case history, risk levels, alert status and complete hybrid intelligence.
 
 <img src="docs/screenshots/investigator-dashboard.png" width="100%">
@@ -605,8 +600,7 @@ Investigators can review case history, risk levels, alert status and complete hy
 </td>
 <td width="50%" valign="top">
 
-### ðŸš¨ Automated Telegram Alert
-
+### &#x1F6A8; Automated Telegram Alert
 Critical incidents are delivered automatically through the n8n Telegram workflow.
 
 <img src="docs/screenshots/telegram-alert.png" width="100%">
@@ -617,8 +611,7 @@ Critical incidents are delivered automatically through the n8n Telegram workflow
 <tr>
 <td width="50%" valign="top">
 
-### âš™ï¸ n8n Response Workflow
-
+### &#x2699;&#xFE0F; n8n Response Workflow
 Webhook data is processed, stored and converted into an operational Telegram alert.
 
 <img src="docs/screenshots/n8n-workflow.png" width="100%">
@@ -626,8 +619,7 @@ Webhook data is processed, stored and converted into an operational Telegram ale
 </td>
 <td width="50%" valign="top">
 
-### ðŸ“Š Real-Data Evaluation
-
+### &#x1F4CA; Real-Data Evaluation
 The evaluation pipeline reports accuracy, precision, recall, F1 score and processing latency.
 
 <img src="docs/screenshots/evaluation-results.png" width="100%">
@@ -638,7 +630,7 @@ The evaluation pipeline reports accuracy, precision, recall, F1 score and proces
 
 ---
 
-## ðŸ† Why SurakshaNet Stands Out
+## 🏆 Why SurakshaNet Stands Out
 
 | Capability | SurakshaNet Approach |
 |---|---|
